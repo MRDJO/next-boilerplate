@@ -1,4 +1,4 @@
-import { Album, BookOpen, Bot, Frame, LayoutGrid, Map, PieChart, Settings2, SquareTerminal, UserCheck, Users } from "lucide-react";
+import { Album, BookOpen, Bot, BusFront, Frame, LayoutGrid, Map, PieChart, Settings2, ShoppingCart, SquareTerminal, UserCheck, Users } from "lucide-react";
 
 // This is sample data.
 export const data = {
@@ -26,6 +26,21 @@ export const data = {
           },
           {
             title: "Chauffeurs",
+            url: "#",
+          }
+        ],
+      },
+      {
+        title: "Produits",
+        url: "#",
+        icon: ShoppingCart,
+        items: [
+          {
+            title: "Aggrégats",
+            url: "#",
+          },
+          {
+            title: "A la vente",
             url: "#",
           }
         ],
@@ -82,6 +97,11 @@ export const data = {
     ],
     projects: [
       {
+        name: "Pack Automobile",
+        url:"#",
+        icon: BusFront
+      },
+      {
         name: "Offres d'emploi",
         url: "#",
         icon: Frame,
@@ -91,6 +111,7 @@ export const data = {
         url: "#",
         icon: Album,
       },
+     
     ],
   }
   
