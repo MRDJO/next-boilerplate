@@ -1,4 +1,4 @@
-import { Album, BookOpen, Bot, Frame, LayoutGrid, Map, PieChart, Settings2, SquareTerminal, Users } from "lucide-react";
+import { Album, BookOpen, Bot, Frame, LayoutGrid, Map, PieChart, Settings2, SquareTerminal, UserCheck, Users } from "lucide-react";
 
 // This is sample data.
 export const data = {
@@ -48,7 +48,7 @@ export const data = {
       {
         title: "Clients",
         url: "#",
-        icon: Settings2,
+        icon: UserCheck,
         items: [
           {
             title: "Clients",
