@@ -31,7 +31,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarHeader className="py-6 flex flex-col justify-center items-center text-center"  >
       {open ? (
             <Link href="/" className="flex items-center text-2xl  font-medium">
-              <Image src="/straca.png"  height={100} width={200} alt="Straca" />
+              <Image src="/38888.jpg"  height={100} width={100} alt="Straca" className="rounded-full" />
             </Link>
           ) : (
             <>

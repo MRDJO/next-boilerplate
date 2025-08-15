@@ -1,3 +1,4 @@
+import { DASHBOARDSTARTPATH } from "@/lib/config";
 import { Album, BookOpen, Bot, BusFront, Frame, LayoutGrid, Map, PieChart, Settings2, ShoppingCart, SquareTerminal, UserCheck, Users } from "lucide-react";
 
 // This is sample data.
@@ -8,76 +9,19 @@ export const data = {
       avatar: "/avatars/shadcn.jpg",
     },
     dashboard:{
-      name: "Tableau de bord",
+      name: "Overview",
       href:"/dashboard",
       icon: LayoutGrid,
     },
     
     navMain: [
       {
-        title: "Collaborateur",
-        url: "#",
-        icon: Users,
-        isActive: true,
-        items: [
-          {
-            title: "Collaborateurs",
-            url: "#",
-          },
-          {
-            title: "Chauffeurs",
-            url: "#",
-          }
-        ],
-      },
-      {
-        title: "Produits",
-        url: "#",
-        icon: ShoppingCart,
-        items: [
-          {
-            title: "Aggrégats",
-            url: "#",
-          },
-          {
-            title: "A la vente",
-            url: "#",
-          }
-        ],
-      },
-      {
-        title: "Commandes",
-        url: "#",
-        icon: Bot,
-        items: [
-          {
-            title: "Commandes",
-            url: "#",
-          },
-          {
-            title: "Voyages",
-            url: "#",
-          }
-        ],
-      },
-      {
-        title: "Clients",
-        url: "#",
-        icon: UserCheck,
-        items: [
-          {
-            title: "Clients",
-            url: "#",
-          },
-        ],
-      },
-      {
-        title: "Paramétres",
+        title: "Settings",
         url: "#",
         icon: Settings2,
         items: [
           {
-            title: "Génerale",
+            title: "General",
             url: "#",
           },
           {
@@ -97,18 +41,8 @@ export const data = {
     ],
     projects: [
       {
-        name: "Pack Automobile",
-        url:"#",
-        icon: BusFront
-      },
-      {
-        name: "Offres d'emploi",
-        url: "#",
-        icon: Frame,
-      },
-      {
-        name: "Blog",
-        url: "#",
+        name: "Users",
+        url: `${DASHBOARDSTARTPATH}/users`,
         icon: Album,
       },
      

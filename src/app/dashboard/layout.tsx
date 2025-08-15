@@ -14,6 +14,7 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
+import Container from "@/components/container";
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -30,17 +31,19 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
             <Breadcrumb>
               <BreadcrumbList>
                 <BreadcrumbItem className="hidden md:block">
-                  <BreadcrumbLink href="#">STRACA BENIN</BreadcrumbLink>
+                  <BreadcrumbLink href="#">Starter Kit</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="hidden md:block" />
                 <BreadcrumbItem>
-                  <BreadcrumbPage>Tableau de bord</BreadcrumbPage>
+                  <BreadcrumbPage>Dashboard</BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
           </div>
         </header>
+        <Container className="py-6">
         {children}
+        </Container>
       </SidebarInset>
     </SidebarProvider>
   );

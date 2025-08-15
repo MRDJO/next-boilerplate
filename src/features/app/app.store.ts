@@ -2,6 +2,7 @@ import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import { User } from "../user/user.models";
 
+
 interface AppState{
     user: User | undefined;
     setUser: (user: User |  undefined) => void;

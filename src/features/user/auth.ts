@@ -1,11 +1,10 @@
-
+import { cookies } from "next/headers";
 
 export async function getHeaderAuthorization() {
-    // const session: Session | null = await getServerSession(authOptions);
-    // const token = session?.accessToken;
+    const cookieStore = await cookies();
+    const token = cookieStore.get("access_token")?.value;
+
     return {
-        Authorization: `Bearer SHOULD BE CHANGED`,
+        Authorization: `Bearer ${token}`,
     };
-  }
-  
-  
+}

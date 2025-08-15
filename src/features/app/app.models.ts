@@ -1,9 +1,3 @@
-export  type {User} from '../user/user.models'
-
-
-
-
-
 export interface GlobalErrorResponse {
     code: number;
     message?: string;
@@ -20,11 +14,11 @@ export interface PaginateMeta {
     firstPageUrl: string
     lastPageUrl: string
     nextPageUrl: any
-    previousPageUrl: any
+    previousPageUrl: any,
+    pendingTotal?: number
 }
 
 export interface PaginateResponse<T> {
-   meta: PaginateMeta
+    meta: PaginateMeta
     data: T[];
 }
-

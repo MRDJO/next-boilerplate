@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import { ProgressProvider } from '@bprogress/next/app';
+import { Toaster } from '@/components/ui/sonner';
 
 
 const Providers = ({children}:{children: React.ReactNode}) => {
@@ -13,6 +14,7 @@ const Providers = ({children}:{children: React.ReactNode}) => {
           shallowRouting
         >
           {children}
+          <Toaster />
         </ProgressProvider>
     </div>
   )
